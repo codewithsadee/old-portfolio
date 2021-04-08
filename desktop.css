@@ -1,0 +1,176 @@
+/* for desktop */
+.col-1 {
+  width: 8.33%;
+}
+.col-2 {
+  width: 16.66%;
+}
+.col-3 {
+  width: 25%;
+}
+.col-4 {
+  width: 33.33%;
+}
+.col-5 {
+  width: 41.66%;
+}
+.col-6 {
+  width: 50%;
+}
+.col-7 {
+  width: 58.33%;
+}
+.col-8 {
+  width: 66.66%;
+}
+.col-9 {
+  width: 75%;
+}
+.col-10 {
+  width: 83.33%;
+}
+.col-11 {
+  width: 91.66%;
+}
+.col-12 {
+  width: 100%;
+}
+
+/* nav bar start */
+
+.navbar {
+  position: sticky;
+}
+
+.nav-logo {
+  text-align: left;
+}
+
+.nav-heading {
+  text-align: right;
+}
+
+.nav-manu {
+  flex-direction: row;
+  justify-content: flex-end;
+}
+
+.nav-manu a {
+  padding: 5px 10px;
+  margin: 20px 0;
+  background: transparent;
+}
+
+/* nav bar end */
+
+/* profile start */
+
+.profile .top-weather-icon {
+  top: 50px;
+  right: 100px;
+  width: 500px;
+  /* transition: 2s; */
+  animation: sun 50s linear infinite;
+  filter: drop-shadow(0 0 50px #0000004d);
+}
+
+@keyframes sun {
+  50% {
+    right: 60%;
+  }
+  100% {
+    right: 60px;
+  }
+}
+
+.profile .top-weather-icon:hover {
+  /* width: 170px; */
+}
+
+.profile-dec p {
+  color: #535353;
+  margin: 0 auto;
+  margin-bottom: 10px;
+  text-align: center;
+  width: 50%;
+}
+
+.profile .bottom-weather-icon {
+  bottom: 20px;
+  left: 140px;
+  width: 120px;
+  transition: 2s;
+}
+
+.profile .bottom-weather-icon:hover {
+  /* width: 170px; */
+}
+
+/* profile end */
+
+/* about start here */
+
+.about-img {
+  margin-top: 100px;
+}
+
+.about-img img {
+  height: 270px;
+  width: 250px;
+}
+
+.about-dec p {
+  text-align: left;
+}
+/* about end here */
+
+/* professional experience start */
+
+.professional-experience .card{
+  transition: 0.3s ease-in-out;
+}
+
+.professional-experience .card:hover{
+  transform: scale(1.05);
+}
+
+/* professional experience end */
+
+/* achivment contact start */
+
+.achivment {
+  padding-right: 50px;
+}
+
+.contact button {
+  width: 120px;
+}
+
+.contact-links {
+  position: relative;
+}
+
+.contact-links .media-buttons {
+  margin-top: 200px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+/* achivment contact end */
+
+
+/* footer start */
+
+  .footer-menu{
+    margin-top: 12px;
+    text-align: left;
+  }
+
+  .footer-menu a{
+    display: inline;
+    margin: 10px;
+  }
+
+/* footer end */

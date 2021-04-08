@@ -1,0 +1,484 @@
+@import url("https://fonts.googleapis.com/css2?family=Fira+Sans&family=Montserrat&family=Satisfy&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Fira+Sans&family=Montserrat&family=Satisfy&display=swap");
+
+* {
+  box-sizing: border-box;
+  font-family: "Fira Sans", sans-serif;
+}
+
+body {
+  margin: 0;
+  background: #e2e1e1;
+}
+
+h1 {
+  font-size: 2.5rem;
+  text-align: center;
+}
+
+h2 {
+  font-size: 1.5rem;
+  text-align: center;
+  margin-bottom: 0;
+}
+
+a {
+  color: #ffffff;
+  font-size: 1.2rem;
+  text-decoration: none;
+}
+
+p {
+  font-size: 1.2rem;
+  text-align: justify;
+}
+
+.dotted-hr {
+  border: dotted;
+  border-bottom: none;
+  margin: 10px auto;
+  width: 70px;
+}
+
+[class*="col-"] {
+  float: left;
+  padding: 10px;
+}
+
+/* for mobile */
+[class*="col-"] {
+  width: 100%;
+}
+
+/* nav bar start */
+
+.navbar {
+  position: sticky;
+  background: #40638b;
+  padding: 0 2%;
+  text-align: center;
+  /* box-shadow: 0 0 100px #40638b; */
+}
+
+.nav-logo img {
+  width: 70px;
+}
+
+.navbar h1 {
+  color: #ffffff;
+  margin: 0;
+  padding-top: 10px;
+}
+
+.nav-manu {
+  display: flex;
+  flex-direction: column;
+  text-transform: uppercase;
+}
+
+.nav-manu a {
+  background: #0d396b;
+  border-radius: 10px;
+  margin: 7px 0;
+  padding: 10px;
+}
+
+.nav-manu a:hover {
+  background: #999999;
+}
+
+.navbar::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* nav bar end */
+
+/* profile start here */
+
+.profile {
+  padding: 120px 10px;
+  text-align: center;
+  position: relative;
+}
+
+.profile .top-weather-icon {
+  position: absolute;
+  top: 100px;
+  right: 60px;
+  width: 400px;
+  /* transition: 2s; */
+  animation: sun 10s linear infinite;
+  filter: drop-shadow(0 0 50px #0000004d);
+}
+
+@keyframes sun {
+  50% {
+    right: 30%;
+  }
+  100% {
+    right: 5px;
+  }
+}
+
+.profile .top-weather-icon:hover {
+  /* transform: rotate(360deg); */
+}
+
+.profile-dec h1 {
+  font-family: "Satisfy", cursive;
+  font-size: 4rem;
+}
+
+.profile-dec p {
+  color: #535353;
+  margin: 0 auto 40px auto;
+  text-align: center;
+  width: 90%;
+}
+
+.profile .bottom-weather-icon {
+  position: absolute;
+  left: 60px;
+  bottom: 10px;
+  width: 120px;
+  transition: 2s;
+  filter: drop-shadow(0 0 50px #ff5e00);
+}
+
+.profile .bottom-weather-icon:hover {
+  /* transform: rotate(360deg); */
+}
+
+.profile::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* profile end here */
+
+/* about start here */
+
+.about {
+  /* background: #2f60a8; */
+  background-image: linear-gradient(to left, #2f60a8, #507abd, #6e94d2, #8cb0e8, #abccfd);
+  padding: 1% 7%;
+  color: #ffffff;
+  text-align: center;
+  font-family: "Montserrat", sans-serif;
+}
+
+.about-img img {
+  border: 5px solid #ffffff;
+  border-radius: 50%;
+  width: 200px;
+  height: 220px;
+}
+
+.aboutme-hr {
+  border: dashed;
+  border-bottom: none;
+}
+
+.about p {
+  text-align: center;
+}
+
+.about a {
+  font-size: 1.2rem;
+}
+
+.cv-button {
+  background: #051c2f;
+  color: #ffffff;
+  border: 1px solid #031424;
+  border-radius: 12px;
+  padding: 15px;
+  outline: none;
+  font-size: 1rem;
+  cursor: pointer;
+  text-align: center;
+  margin: 30px 0;
+}
+
+.about::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* about end here */
+
+/* professional experience start */
+
+.professional-experience {
+  padding: 1% 0%;
+}
+
+.professional-experience .card {
+  background: #a39e9e;
+  border-radius: 5px;
+  padding: 10px;
+  /* width: 400px; */
+  height: 700px;
+  transition: 0.3s;
+}
+
+.professional-experience .card:hover {
+  box-shadow: 0 0 15px #000000;
+}
+
+.professional-experience .card .card-icon {
+  text-align: center;
+}
+
+.professional-experience .card .card-icon img {
+  margin-top: 20px;
+  width: 100px;
+  border: solid #ffffff;
+  border-radius: 50%;
+  padding: 4px;
+}
+
+.professional-experience .card-title h2 {
+  background: #616161;
+  color: #ffffff;
+  padding: 10px;
+  text-align: center;
+}
+
+.professional-experience .skills-container {
+  padding-right: 45px;
+}
+
+.professional-experience .skills-container li {
+  list-style-type: none;
+  font-weight: bolder;
+  margin: 30px 10px;
+  text-transform: uppercase;
+  position: relative;
+}
+
+.professional-experience .skills-container li::before {
+  content: "";
+  position: absolute;
+  top: calc(100% + 2px);
+  left: 0;
+  width: 100%;
+  height: 13px;
+  background: #0637c06c;
+  border-radius: 1000px;
+}
+
+.professional-experience .skills-container li::after {
+  content: "";
+  position: absolute;
+  top: calc(100% + 2px);
+  left: 0;
+  width: 0;
+  height: 13px;
+  background: #26469c;
+  border-radius: 1000px;
+
+  animation: 3s 2s cubic-bezier(0.25, 0.1, 0.66, 1.45);
+  animation-fill-mode: forwards;
+}
+
+.professional-experience .skills-container li.html::after {
+  animation-name: html;
+}
+
+@keyframes html {
+  100% {
+    width: 90%;
+  }
+}
+
+.professional-experience .skills-container li.css::after {
+  animation-name: css;
+}
+
+@keyframes css {
+  100% {
+    width: 80%;
+  }
+}
+
+.professional-experience .skills-container li.js::after {
+  animation-name: js;
+}
+
+@keyframes js {
+  100% {
+    width: 60%;
+  }
+}
+
+.professional-experience .skills-container li.bs::after {
+  animation-name: bs;
+}
+
+@keyframes bs {
+  100% {
+    width: 80%;
+  }
+}
+
+.professional-experience .skills-container li.jquery::after {
+  animation-name: jquery;
+}
+
+@keyframes jquery {
+  100% {
+    width: 70%;
+  }
+}
+
+.professional-experience .skills-container li.nood::after {
+  animation-name: nood;
+}
+
+@keyframes nood {
+  100% {
+    width: 40%;
+  }
+}
+
+.professional-experience .skills-container li.express::after {
+  animation-name: express;
+}
+
+@keyframes express {
+  100% {
+    width: 30%;
+  }
+}
+
+.professional-experience .skills-container li.github::after {
+  animation-name: github;
+}
+
+@keyframes github {
+  100% {
+    width: 50%;
+  }
+}
+
+.professional-experience .skills-container li.react::after {
+  animation-name: react;
+}
+
+@keyframes react {
+  100% {
+    width: 20%;
+  }
+}
+
+.professional-experience::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* professional experience end */
+
+/* achivment contact start */
+
+.achivment-contact {
+  padding: 1% 7%;
+  /* background: #2f60a8; */
+  background-image: linear-gradient(to right, #2f60a8, #1579b2, #2a8fb6, #52a3b7, #7ab6b9); 
+  color: #ffffff;
+}
+
+.contact {
+  text-align: center;
+}
+
+.contact input,
+textarea {
+  width: 100%;
+  padding: 10px;
+  font-size: 1rem;
+  text-align: center;
+  border: none;
+  border-radius: 5px;
+  outline: none;
+  resize: none;
+}
+
+.contact button {
+  background: #051c2f;
+  color: #ffffff;
+  border: 1px solid #031424;
+  border-radius: 15px;
+  padding: 15px;
+  outline: none;
+  cursor: pointer;
+  margin: 15px;
+  width: 100px;
+}
+
+.contact-links {
+  text-align: center;
+}
+
+.contact-links .media-buttons .btn {
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  font-size: 32px;
+  padding: 5px;
+  margin: 10px;
+  width: 50px;
+  background: #ffffff;
+  outline: none;
+}
+
+.contact-links .media-buttons .btn:hover {
+  background: #b4b4b4;
+}
+
+.achivment-contact::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* achivment contact end */
+
+
+/* footer start */
+
+  .footer{
+    background: #000000;
+    padding: 20px;
+    text-align: center;
+    color: #ffffff;
+    /* font-size: 0.8rem; */
+  }
+
+  .footer-menu a{
+    display: block;
+    margin: 15px 0;
+    font-size: 1rem;
+  }
+
+  .footer-menu a:hover{
+    color: #a1a1a1;
+  }
+
+  .footer-desc{
+    
+  }
+
+
+  .footer::after{
+    content: '';
+    display: table;
+    clear: both;
+  }
+
+/* footer end */
